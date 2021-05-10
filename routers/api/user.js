@@ -22,7 +22,7 @@ router.post('/login', async(req, res) => {
             message: '密码不正确'
         })
     }
-    // 登录成功校验后 生成token 这块应该前端去做
+    // 登录成功校验后 生成token 这块应该前端做
     // 进行签名
     const token = jwt.sign({ 
         id: String(user._id)
