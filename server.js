@@ -6,7 +6,6 @@ app.use(express.json())
 
 app.use('/api', user)
 
-// User.db.dropCollection('users')
 
 // 监听端口
 app.listen(3001,() => {
